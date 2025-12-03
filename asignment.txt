@@ -1,0 +1,108 @@
+ 4.	Write short answers to:
+o	What is the difference between arrays and linked lists?
+o	What is the time complexity of insertion in a linked list
+Answers
+ARRAYS LIST:
+1. it is a collection of elements stored in continous (contigous) memory location 
+2. has fixed size once created 
+3. supports fast indexing because the address of any element can be calculated directly 
+4. inserting or delecting in the middle is slow because elements must be shifted 
+LINKED LIST:
+1. a collection of node,where each node stores data and a pointer to the next node 
+2. size can grow or shrink at any time 
+3. does not require continous memory 
+4. insertion and deletion are fast if you already know the position,because you only adjust the pointers 
+5. access is slow because you must move from node to node 
+
+6. Discussion Questions
+1.	What are the key differences between primitive data types and ADTs?
+2.	Why are arrays considered static, and linked lists dynamic?
+3.	In what situations would you prefer a linked list over an array?
+4.	Give real-world examples where each of the following would be useful:
+o	Stack
+o	Queue
+o	Linked List
+    Answers
+PRIMITIVE DATA TYPES:
+1. basic data types built into the programming languages 
+example:int,float,char,boolean 
+2. store a single simple value 
+3. have predefined operations (like +,-,/)
+4. can not be broken down further 
+ABSTRACT DATA TYPES:
+1. a model or concept tha defines data and operations
+example: stack,Queue,list,tree,graph 
+2. they describe what operations are allowed (push up,pop,enqueue),not how they are implemented.
+3.can be implemented using arrays,linked list etc 
+
+->ARRAYS=static:
+1. when you create an array,you must specify its exact size ahead of time 
+2. memory is allowed in one block and cannot move 
+3. if you need more space,you must create a new array 
+->LINKEDLIST=dynamic
+1. memoryis allocated node by node as needed 
+2. you can add or remove nodes anytime 
+3. no need to know the size in advance 
+4. perfect for data that keeps changing 
+
+-->In what situations would you prefer a linked list over an array?
+1. when you need frequent insertions or delections.eg like a playlist where songs are added/removed often 
+2. you do not need the number of element in advance. eg a chat app loading messages one by one 
+3. memory is limited or fragmented. eg linkedlist can use small free memory blocks, unlike arrays 
+4. you want to easily grow/shrink the data structure.eg arrays cannot grow without creating a new one 
+
+-->Stack (LIFO)
+used when the last thing added is the first to be removed 
+example 
+1. browser history: last visited page is the first to go back to 
+2. undo feature in apps: the last action you did is undone first
+3. programmingfunction calls: the most recent function call return first 
+
+--->Queue (FIFO)
+used when the first item that enters is the first to be processed 
+examples:
+1. atm queues or bank queues 
+2. print queues: first file requested is printed first 
+customer service ticket system: first customerto get serverd first 
+
+--->Linked list 
+used when you need fast insertion/delection and do not need random access 
+examples:
+1. music playlist: easy to add/remove songs 
+2. navigating slides/plays:next/previous connections like nodes 
+3. train coaches: each coach is linked to the next 
+
+-->Activity 1:
+Write a function to compute the sum of all elements in a list. Analyze its time complexity.
+def total_sum(arr):
+    total = 0
+    for i in arr:
+        total += i
+    return total
+•	Time Complexity: O(n)
+•	Space Complexity: O(1)
+   SOLUTION:
+ def sum_list(arr)
+    total=0
+    for i in arr:
+    toataL+=1
+    return total 
+my_arr = [1,2,3,4,5,6,7,8,9,10] 
+print(sum_list(my_arr)) 
+
+--> Time complexity
+total = 0 -- assignment takes constant time 0(1)
+for i in arr iteration takes time 0(n)
+total +=;-addition and assignment takes constant amount of time for each iteration constant amount of time, 0(1)
+    since the time taken is dominated by the loop which executes n times with a constant amount of work in each iteration 
+therefore there is a linear relationship betweenthe execution time and the input size n 
+  the time complexityis 0(n).
+
+
+
+---> activity 2
+
+    head 
+      | 
+      V 
+    
